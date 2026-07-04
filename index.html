@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity | Your VIP Pass to Entertainment News</title>
+    
+    <!-- ======================================================= -->
+    <!-- 🛑 PLACE YOUR AD SCRIPTS HERE (Vignette & Interstitials) -->
+    <!-- Place anti-block or smart zone scripts inside the head for optimal trigger -->
+    <!-- ======================================================= -->
+
+    <style>
+        :root {
+            --bg-color: #0d0d13;
+            --card-bg: #1a1a24;
+            --accent-color: #ff2a5f;
+            --text-main: #ffffff;
+            --text-muted: #a0a0b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(13, 13, 19, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #2a2a3a;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hero-section {
+            grid-column: 1 / -1;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000') no-repeat center center/cover;
+            height: 400px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .post-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-img {
+            height: 180px;
+            background-color: #2a2a3a;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 1.2rem;
+        }
+
+        .post-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Sidebar & Ad Elements */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .widget {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .widget h4 {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .banner-ad-space {
+            background-color: #15151f;
+            border: 2px dashed #2a2a3a;
+            border-radius: 8px;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer {
+            background-color: #07070a;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #1a1a24;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Celebrity<span>.</span></a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Music</a>
+                <a href="#">Movies</a>
+                <a href="#">Gist</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Featured Hero Story -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Trending</span>
+                <h2>The Unstoppable Rise of Global Afrobeats</h2>
+                <p style="color: #e0e0e0;">How local rhythms are commanding the biggest global stages tonight.</p>
+            </div>
+        </section>
+
+        <!-- Main News Feed -->
+        <section class="feed">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 2px solid #2a2a3a; padding-bottom: 0.5rem;">Latest News</h2>
+            <div class="news-grid">
+                
+                <!-- Card 1 -->
+                <article class="post-card">
+                    <div class="post-img" style="background: #3a2a4a url('https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=500') center/cover;"></div>
+                    <div class="post-content">
+                        <span class="badge" style="background: #00bcd4;">Cinema</span>
+                        <h3>Box Office Showdown This Weekend</h3>
+                        <p>The highly anticipated blockbuster breaks premiere records across cinemas nationwide.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="post-card">
+                    <div class="post-img" style="background: #2a3a4a url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=500') center/cover;"></div>
+                    <div class="post-content">
+                        <span class="badge" style="background: #e91e63;">Music</span>
+                        <h3>Top 10 Chart-Toppers of the Week</h3>
+                        <p>Fresh releases dominate the airwaves as new artists shake up the industry rankings.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sidebar (Ads & Brand Info) -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h4>Sponsored Content</h4>
+                <div class="banner-ad-space">
+                    <!-- ========================================== -->
+                    <!-- 🛑 PLACE YOUR BANNER / NATIVE SCRIPT HERE -->
+                    <!-- ========================================== -->
+                    <p>Vignette Banner / Native Display Zone</p>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h4>About Celebrity</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    Welcome to the ultimate stage for entertainment news! Built for speed and sleek performance, our platform delivers the latest celebrity scoops, movie reviews, and pop culture trends right to your screen.
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Celebrity. Hosted beautifully on GitHub Pages.</p>
+    </footer>
+
+    <!-- ======================================================= -->
+    <!-- 🛑 PLACE YOUR IN-PAGE PUSH SCRIPT HERE                  -->
+    <!-- Best positioned right before the closing body tag       -->
+    <!-- ======================================================= -->
+
+</body>
+</html>
