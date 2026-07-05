@@ -19,11 +19,17 @@
         main { max-width: 800px; margin: 3rem auto; padding: 0 2rem; }
         h1 { margin-bottom: 2rem; font-size: 2.5rem; }
         
-        .movie-item { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; display: flex; gap: 1.5rem; }
-        .movie-poster { width: 120px; height: 160px; background: #2a2a3a; border-radius: 4px; }
-        .details h3 { color: var(--accent-color); margin-bottom: 0.5rem; }
+        .movie-item { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; display: flex; gap: 1.5rem; align-items: center; }
+        .movie-poster { width: 120px; height: 160px; background: #2a2a3a; border-radius: 4px; flex-shrink: 0; object-fit: cover; }
+        .details h3 { color: var(--accent-color); margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .details p { color: var(--text-muted); font-size: 0.95rem; }
         .rating { display: inline-block; background: #2a2a3a; color: #ffca28; font-size: 0.8rem; font-weight: bold; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.5rem; }
         
+        @media (max-width: 550px) {
+            .movie-item { flex-direction: column; text-align: center; }
+            .movie-poster { margin: 0 auto; }
+        }
+
         footer { text-align: center; padding: 3rem; color: var(--text-muted); }
     </style>
 </head>
@@ -43,31 +49,43 @@
     <main>
         <h1>Cinema & Box Office Hits</h1>
 
-        <!-- Movie List -->
+        <!-- Movie Item 1: YouTube Viral Drama -->
         <article class="movie-item">
             <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=200') center/cover;"></div>
             <div class="details">
-                <span class="rating">⭐ 8.5 / 10</span>
-                <h3>The Blockbuster Sequel: First Look</h3>
-                <p>The highly anticipated sequel smashed records on its opening weekend. Read our full spoiler-free review on what makes it a must-watch.</p>
+                <span class="rating">🔥 3M+ Views YouTube</span>
+                <h3>Mother's Bargain</h3>
+                <p>The viral sensation taking over YouTube feeds nationwide. Starring top actress Chinenye Nnebe alongside Nollywood veteran Emeka Ike, this high-stakes family drama has completely captured the internet's attention with explosive numbers this week.</p>
             </div>
         </article>
 
+        <!-- Movie Item 2: Box Office Hit -->
         <article class="movie-item">
             <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=200') center/cover;"></div>
             <div class="details">
-                <span class="rating">🔥 Trending</span>
-                <h3>Top Streaming Series This Week</h3>
-                <p>Binge-watch alert! From thriller dramas to sci-fi mysteries, these are the top shows keeping fans glued to their screens right now.</p>
+                <span class="rating">⭐ 8.7 / 10 Cinema</span>
+                <h3>King of Thieves (Agesinkole)</h3>
+                <p>An absolute masterclass in epic Yoruba lore, co-directed by Tope Adebayo and Odunlade Adekola. This cinematic visual powerhouse continues to break record numbers across major cinema houses with its gripping narrative and heavy traditional production style.</p>
             </div>
         </article>
 
+        <!-- Movie Item 3: Streaming Hit -->
         <article class="movie-item">
             <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=200') center/cover;"></div>
             <div class="details">
-                <span class="rating">🎬 Coming Soon</span>
-                <h3>Highly Anticipated Trailers You Missed</h3>
-                <p>A comprehensive roundup of the biggest trailer drops that set the internet on fire over the last 24 hours.</p>
+                <span class="rating">🎬 Top 10 Netflix</span>
+                <h3>Blood Sisters</h3>
+                <p>Binge-watch gold from EbonyLife Studios. This relentless, dark thriller series tracking a wedding that spins into an active runaway crime scene remains heavily entrenched in Netflix's top regional charts due to phenomenal performances by Ini Dima-Okojie and Nancy Isime.</p>
+            </div>
+        </article>
+
+        <!-- Movie Item 4: YouTube Indie Drop -->
+        <article class="movie-item">
+            <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1478720143033-6a972678aa30?q=80&w=200') center/cover;"></div>
+            <div class="details">
+                <span class="rating">🔥 Trending YouTube</span>
+                <h3>Two Can Play</h3>
+                <p>An incredibly sharp romantic drama directed by external production mainstays. Headlined by fan-favorites Maurice Sam and Jackie Appiah, the film continues its massive social media traction as a certified viral clip magnet.</p>
             </div>
         </article>
     </main>

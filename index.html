@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-<meta name="monetag" content="3c0dede34be5282addc0149995d2c3c5">
+    <meta name="monetag" content="3c0dede34be5282addc0149995d2c3c5">
 
-
-<script>(function(s){s.dataset.zone='11242055',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <!-- Anti-Adblock / Multi-tag Tracker -->
+    <script>(function(s){s.dataset.zone='11242055',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,9 +185,9 @@
 
         .banner-ad-space {
             background-color: #15151f;
-            border: 2px dashed #2a2a3a;
+            border: 1px solid #2a2a3a;
             border-radius: 8px;
-            min-height: 250px;
+            min-height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -196,6 +195,32 @@
             font-size: 0.85rem;
             text-align: center;
             padding: 1rem;
+        }
+
+        /* Dedicated Feed Native Ad Styling */
+        .native-feed-ad {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, #1e1e2f 0%, #151522 100%);
+            border: 1px dashed var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            position: relative;
+        }
+        
+        .ad-marker {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.7rem;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            padding: 1px 4px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
         }
 
         footer {
@@ -213,7 +238,7 @@
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">Celebrity<span>.</span></a>
+            <a href="index.html" class="logo">Celebrity<span>.</span></a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="music.html">Music</a>
@@ -227,34 +252,69 @@
         <!-- Featured Hero Story -->
         <section class="hero-section">
             <div class="hero-content">
-                <span class="badge">Trending</span>
-                <h2>The Unstoppable Rise of Global Afrobeats</h2>
-                <p style="color: #e0e0e0;">How local rhythms are commanding the biggest global stages tonight.</p>
+                <span class="badge">Gist</span>
+                <h2>Davido Announces 6th Studio Album 'ORIADÉ'</h2>
+                <p style="color: #e0e0e0;">The Afrobeats megastar sets July 31, 2026, as the official release date for his highly anticipated project.</p>
             </div>
         </section>
 
         <!-- Main News Feed -->
         <section class="feed">
-            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 2px solid #2a2a3a; padding-bottom: 0.5rem;">Latest News</h2>
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 2px solid #2a2a3a; padding-bottom: 0.5rem;">Latest Updates</h2>
             <div class="news-grid">
                 
-                <!-- Card 1 -->
+                <!-- Card 1: Movies -->
                 <article class="post-card">
                     <div class="post-img" style="background: #3a2a4a url('https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=500') center/cover;"></div>
                     <div class="post-content">
-                        <span class="badge" style="background: #00bcd4;">Cinema</span>
-                        <h3>Box Office Showdown This Weekend</h3>
-                        <p>The highly anticipated blockbuster breaks premiere records across cinemas nationwide.</p>
+                        <span class="badge" style="background: #00bcd4;">Movies</span>
+                        <h3>'Mother\'s Bargain' Hits 3M Views on YouTube</h3>
+                        <p>The stellar Nollywood drama starring Chinenye Nnebe and veteran Emeka Ike is dominating charts this weekend.</p>
                     </div>
                 </article>
 
-                <!-- Card 2 -->
+                <!-- Card 2: Music -->
                 <article class="post-card">
                     <div class="post-img" style="background: #2a3a4a url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=500') center/cover;"></div>
                     <div class="post-content">
                         <span class="badge" style="background: #e91e63;">Music</span>
-                        <h3>Top 10 Chart-Toppers of the Week</h3>
-                        <p>Fresh releases dominate the airwaves as new artists shake up the industry rankings.</p>
+                        <h3>Blaqbonez & Asake Clear Streaming Charts</h3>
+                        <p>Their massive mid-year collaboration "Chanel" secures its consecutive week at number 1 on the TurnTable charts.</p>
+                    </div>
+                </article>
+
+                <!-- 🚀 NATIVE IN-FEED AD PLACEMENT CODE ZONE 🚀 -->
+                <!-- This breaks the layout beautifully inside the feed so users interact with it naturally -->
+<script>(function(s){s.dataset.zone='11242057',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+                <div class="native-feed-ad">
+                    <span class="ad-marker">Sponsored</span>
+                    <h3 style="color: var(--text-main); font-size: 1.1rem; margin-top: 5px;">Recommended For You</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">Click below to discover premium trending updates, games, and local entertainment highlights.</p>
+                    
+                    <!-- PLACE YOUR MONETAG NATIVE / IN-PAGE PUSH SCRIPT EMBED DIRECTLY BELOW THIS LINE -->
+                    <div style="margin-top: 5px; text-align: center; color: #555566; font-size: 0.8rem;">
+                        [In-Page Push / Native Unit Injection Point]
+                    </div>
+                </div>
+
+                <!-- Card 3: Gist -->
+                <article class="post-card">
+                    <div class="post-img" style="background: #3a3a2a url('https://images.unsplash.com/photo-1516280440614-37939bbacd6a?q=80&w=500') center/cover;"></div>
+                    <div class="post-content">
+                        <span class="badge" style="background: #9c27b0;">Gist</span>
+                        <h3>Toke Makinwa Spark Conversations on Ebuka\'s Podcast</h3>
+                        <p>Social media goes wild as the host advices singles to "date within their wage" to curb financial expectations.</p>
+                    </div>
+                </article>
+
+                <!-- Card 4: Music/Gist -->
+                <article class="post-card">
+                    <div class="post-img" style="background: #2a4a3a url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=500') center/cover;"></div>
+                    <div class="post-content">
+                        <span class="badge" style="background: #4caf50;">Music</span>
+                        <h3>Asake Shifts Tone with 'Forgiveness'</h3>
+                        <p>Fans react positively as the YNBL singer explores deep, vulnerable, and reflective themes in his newest singles.</p>
                     </div>
                 </article>
 
@@ -266,9 +326,10 @@
             <div class="widget">
                 <h4>Sponsored Content</h4>
                 <div class="banner-ad-space">
-                  <script>(function(s){s.dataset.zone='11242057',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>  
+                    <!-- Your Vignette Script Tag Is Live Here -->
+                    <script>(function(s){s.dataset.zone='11242057',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>  
                     
-                    <p>Vignette Banner / Native Display Zone</p>
+                    <p style="font-size: 0.8rem; color: var(--accent-color);">Premium Native Display Active</p>
                 </div>
             </div>
 
@@ -284,11 +345,6 @@
     <footer>
         <p>&copy; 2026 Celebrity. Hosted beautifully on GitHub Pages.</p>
     </footer>
-
-    <!-- ======================================================= -->
-    <!-- 🛑 PLACE YOUR IN-PAGE PUSH SCRIPT HERE                  -->
-    <!-- Best positioned right before the closing body tag       -->
-    <!-- ======================================================= -->
 
 </body>
 </html>
