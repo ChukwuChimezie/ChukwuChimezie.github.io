@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Movies & Cinema News | Celebrity</title>
+    <!-- Style consistency with index.html and music.html -->
+    <style>
+        :root { --bg-color: #0d0d13; --card-bg: #1a1a24; --accent-color: #ff2a5f; --text-main: #ffffff; --text-muted: #a0a0b0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        header { background-color: #0d0d13; border-bottom: 1px solid #2a2a3a; padding: 1rem 2rem; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 800; text-transform: uppercase; color: #fff; text-decoration: none; }
+        .logo span { color: var(--accent-color); }
+        nav a { color: var(--text-muted); text-decoration: none; margin-left: 1.5rem; font-weight: 600; }
+        
+        main { max-width: 800px; margin: 3rem auto; padding: 0 2rem; }
+        h1 { margin-bottom: 2rem; font-size: 2.5rem; }
+        
+        .movie-item { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; display: flex; gap: 1.5rem; }
+        .movie-poster { width: 120px; height: 160px; background: #2a2a3a; border-radius: 4px; }
+        .details h3 { color: var(--accent-color); margin-bottom: 0.5rem; }
+        .rating { display: inline-block; background: #2a2a3a; color: #ffca28; font-size: 0.8rem; font-weight: bold; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.5rem; }
+        
+        footer { text-align: center; padding: 3rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Celebrity<span>.</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a href="movies.html">Movies</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cinema & Box Office Hits</h1>
+
+        <!-- Movie List -->
+        <article class="movie-item">
+            <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=200') center/cover;"></div>
+            <div class="details">
+                <span class="rating">⭐ 8.5 / 10</span>
+                <h3>The Blockbuster Sequel: First Look</h3>
+                <p>The highly anticipated sequel smashed records on its opening weekend. Read our full spoiler-free review on what makes it a must-watch.</p>
+            </div>
+        </article>
+
+        <article class="movie-item">
+            <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=200') center/cover;"></div>
+            <div class="details">
+                <span class="rating">🔥 Trending</span>
+                <h3>Top Streaming Series This Week</h3>
+                <p>Binge-watch alert! From thriller dramas to sci-fi mysteries, these are the top shows keeping fans glued to their screens right now.</p>
+            </div>
+        </article>
+
+        <article class="movie-item">
+            <div class="movie-poster" style="background: url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=200') center/cover;"></div>
+            <div class="details">
+                <span class="rating">🎬 Coming Soon</span>
+                <h3>Highly Anticipated Trailers You Missed</h3>
+                <p>A comprehensive roundup of the biggest trailer drops that set the internet on fire over the last 24 hours.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Celebrity. Pass the popcorn.</p>
+    </footer>
+
+</body>
+</html>
